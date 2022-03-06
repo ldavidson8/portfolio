@@ -1,25 +1,25 @@
 import {
+  Logo,
   MenuWrapper,
   SubMenu,
   NavAnchor,
   Github,
   LinkedIn,
-  Hamburger,
 } from "./components";
+import Burger from "./Burger";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useState } from "react";
+import Menu from "./Menu";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <MenuWrapper>
-        <div>
-          <h1>hi</h1>
-        </div>
-        <SubMenu>
-          <h1>Hello</h1>
-        </SubMenu>
-        <Hamburger />
+        <Logo />
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} />
+        <SubMenu></SubMenu>
         <SubMenu>
           <Link href="/about" passHref>
             <NavAnchor>About</NavAnchor>

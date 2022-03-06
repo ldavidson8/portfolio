@@ -53,6 +53,7 @@ body {
 html {
   scrollbar-color: var(--color-primary,#3992FF) #2A2A2A;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 /* WebKit and Chromiums */
@@ -113,6 +114,11 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+button {
+     background: none;
+     border: none;
+     padding: 0;
 }
 
 `;

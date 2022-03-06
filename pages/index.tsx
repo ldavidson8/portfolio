@@ -7,7 +7,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 const Hero = styled.div`
   display: flex;
   position: relative;
-  height: 75vh;
+  height: 85vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@ const ColoredText = styled.span`
 `;
 
 const fadeMoveDown = keyframes`
-  0%{
+    0%{
         opacity: 0;
         transform: translateY(0px);
     }
@@ -54,7 +54,11 @@ const ArrowDown = styled(MdKeyboardArrowDown)`
 `;
 
 const PageSection = styled.div`
-  padding: 5rem;
+  padding: 3rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 5rem;
+  }
 `;
 
 const InnerSection = styled.div`
@@ -119,13 +123,13 @@ const Home = () => {
           </ColoredText>{" "}
         </SubHeading>
 
-        <Link href="#aboutsection" passHref>
+        <Link href="#about">
           <a>
             <ArrowDown />
           </a>
         </Link>
       </Hero>
-      <PageSection id="#aboutsection">
+      <PageSection id="about">
         <SubHeading>About Me</SubHeading>
         <InnerSection>
           <Container>
@@ -154,13 +158,16 @@ const Home = () => {
                   new features that appear on the web in recent years. <br />I
                   specialise in Javascript based frameworks such as React and
                   Vue, alongside my proficient knowledge of years studying the
-                  core principles of HTML and CSS to make the web look it&apos;s
-                  best and fastest.
+                  core principles of HTML and CSS to make the web look its best
+                  and fastest.
                 </TextSection>
               </TextContainer>
             </FlexContainer>
           </Container>
         </InnerSection>
+      </PageSection>
+      <PageSection>
+        <SubHeading>What I&apos;ve worked on</SubHeading>
       </PageSection>
     </>
   );
