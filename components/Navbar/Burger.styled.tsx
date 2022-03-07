@@ -9,6 +9,9 @@ export const StyledBurger = styled.button<Props>`
   background-color: transparent;
   flex-direction: column;
   width: 40px;
+  position: absolute;
+  top: 3.5%;
+  right: 5%;
   z-index: 1001;
 
   @media screen and (min-width: 876px) {

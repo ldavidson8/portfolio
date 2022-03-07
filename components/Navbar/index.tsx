@@ -8,17 +8,13 @@ import {
 } from "./components";
 import Burger from "./Burger";
 import Link from "next/link";
-import { useState } from "react";
 import Menu from "./Menu";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
   return (
     <>
       <MenuWrapper>
         <Logo />
-        <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} />
         <SubMenu></SubMenu>
         <SubMenu>
           <Link href="/about" passHref>

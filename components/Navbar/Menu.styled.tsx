@@ -7,15 +7,16 @@ interface Props {
 export const StyledMenu = styled.nav<Props>`
   flex-flow: column wrap;
   background-color: var(--color-background, #121212);
-  position: absolute;
+  position: fixed;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   right: 0;
   height: 100vh;
   display: flex;
-  width: 75%;
+  width: 100%;
+  z-index: 1000;
   padding-top: 3.5rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   align-items: center;
   a {
     padding: 1em;
