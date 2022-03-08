@@ -3,6 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import styled, { keyframes } from "styled-components";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import ProjectCard from "@/components/ProjectCard";
+import { Github, LinkedIn, Email } from "@/components/SocialLinks";
+import ContactForm from "@/components/ContactForm";
 
 const Hero = styled.div`
   display: flex;
@@ -23,6 +26,7 @@ const MainHeading = styled.h1`
 const SubHeading = styled.h2`
   font-size: clamp(2em, 3vw, 3em);
   font-family: "Josefin Sans";
+  margin-bottom: 1em;
   color: #fff;
   font-weight: 400;
 `;
@@ -54,10 +58,14 @@ const ArrowDown = styled(MdKeyboardArrowDown)`
 `;
 
 const PageSection = styled.div`
-  padding: 3rem;
+  padding: 2em;
 
   @media screen and (min-width: 768px) {
-    padding: 5rem;
+    padding: 5em;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 10em;
   }
 `;
 
@@ -95,6 +103,38 @@ const FlexContainer = styled.div`
   flex-direction: column;
   flex: 1;
   position: relative;
+`;
+
+const ProjectGrid = styled.div`
+  display: grid;
+  gap: 3em;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media screen and (min-width: 850px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
+
+const SocialLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+`;
+
+const SocialLink = styled.a`
+  display: flex;
+  margin: 1em 0;
+  align-items: center;
+  gap: 1.5em;
+`;
+
+const SocialLinkText = styled.p`
+  font-size: 1.3rem;
+  line-height: 2;
 `;
 
 const Home = () => {
@@ -168,6 +208,95 @@ const Home = () => {
       </PageSection>
       <PageSection>
         <SubHeading>What I&apos;ve worked on</SubHeading>
+        <ProjectGrid>
+          <ProjectCard
+            pageurl="#"
+            src="/images/sme.png"
+            alt=""
+            projectname="SwapMyEnergy"
+            industry="Energy Intermediary"
+            color="var(--color-primary, #3992FF)"
+            projecturl="https://swapmyenergy.co.uk/"
+          />
+          <ProjectCard
+            pageurl="#"
+            src="/images/gigawaffle.png"
+            alt=""
+            projectname="Gigawaffle"
+            industry="Marketing &amp; Web Design"
+            color="var(--color-secondary, #D83BD2)"
+            projecturl="https://gigawaffle.co.uk/"
+          />
+          <ProjectCard
+            pageurl="#"
+            src="/images/playgroundbullys.jpg"
+            alt=""
+            projectname="PlaygroundBullys"
+            industry="Dog Breeder and Transportation"
+            color="var(--color-tertiary, #F44250)"
+            projecturl="https://swapmyenergy.co.uk/"
+          />
+          <ProjectCard
+            pageurl="#"
+            src="/images/grand-venue.png"
+            alt=""
+            projectname="Grand Venue"
+            industry="Wedding Venue"
+            color="var(--color-primary, #3992FF)"
+            projecturl="https://grandvenue.co/home/"
+          />
+          <ProjectCard
+            pageurl="#"
+            src="/images/grand-occasions.png"
+            alt=""
+            projectname="Grand Occasions"
+            industry="Dog Breeder and Transportation"
+            color="var(--color-secondary, #D83BD2)"
+            projecturl="https://grandoccasions.co/home"
+          />
+          <ProjectCard
+            pageurl="#"
+            src="/images/unite-cities.jpg"
+            alt=""
+            projectname="Unite Cities"
+            industry="Logistics and Storage Service"
+            color="var(--color-tertiary, #F44250)"
+            projecturl="https://unitecities.com/"
+          />
+        </ProjectGrid>
+      </PageSection>
+      <PageSection>
+        <SubHeading>Contact Me</SubHeading>
+        <InnerSection>
+          <Container>
+            <FlexContainer>
+              <TextContainer>
+                <TextSection>
+                  If you think I&apos;m a good fit for a project you have, or
+                  just want to have a chat, fill in the form or message me on my
+                  LinkedIn
+                </TextSection>
+                <SocialLinks>
+                  <SocialLink href="#">
+                    <Email />
+                    <SocialLinkText>Email Me</SocialLinkText>
+                  </SocialLink>
+                  <SocialLink href="#">
+                    <Github />
+                    <SocialLinkText>Find me on Github</SocialLinkText>
+                  </SocialLink>
+                  <SocialLink href="#">
+                    <LinkedIn />
+                    <SocialLinkText>Find me on LinkedIn</SocialLinkText>
+                  </SocialLink>
+                </SocialLinks>
+              </TextContainer>
+            </FlexContainer>
+            <FlexContainer>
+              <ContactForm />
+            </FlexContainer>
+          </Container>
+        </InnerSection>
       </PageSection>
     </>
   );

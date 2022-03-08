@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 
 export const Logo = () => {
@@ -55,6 +54,7 @@ export const MobileMenu = styled.div`
 export const SubMenu = styled.div`
   display: none;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   padding: 1rem 0;
 
@@ -70,23 +70,5 @@ export const NavAnchor = styled.a`
   transition: color 0.3s;
   &:hover {
     color: var(--color-primary, #3992ff);
-  }
-`;
-
-export const Github = styled(BsGithub)`
-  color: var(--color-icons, #f8f8f8);
-  transform: scale(2);
-  transition: color 0.3s;
-  &:hover {
-    color: var(--color-secondary, #d83bd2);
-  }
-`;
-
-export const LinkedIn = styled(BsLinkedin)`
-  color: var(--color-icons, #f8f8f8);
-  transform: scale(2);
-  transition: color 0.3s;
-  &:hover {
-    color: var(--color-secondary, #d83bd2);
   }
 `;

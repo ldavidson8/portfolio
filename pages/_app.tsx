@@ -120,6 +120,10 @@ button {
      border: none;
      padding: 0;
 }
+a {
+  text-decoration: none;
+  color: inherit
+}
 
 `;
 

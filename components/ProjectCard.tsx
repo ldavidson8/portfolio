@@ -3,31 +3,38 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Card = styled.div`
-  height: 25em;
-  min-height: fit-content;
-  color: var(--color-cards, #e5e5e5);
+  background-color: var(--color-cards, #e5e5e5);
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 const ImageContainer = styled.div`
-  position: absolute;
+  position: relative;
   top: 0;
-  object-fit: cover;
+  width: 100%;
 `;
 
 const ProjectName = styled.p`
   font-size: clamp(1rem, 2vw, 2rem);
   color: #000;
+  padding: 1rem;
 `;
 
 const IndustryName = styled.p`
   color: #000;
+  padding: 1rem;
 `;
 
 const ProjectURL = styled.p`
   color: ${({ color }) => color};
+  padding: 1rem;
 `;
 
 interface CardProps {
@@ -51,18 +58,26 @@ const ProjectCard = ({
 }: CardProps) => {
   return (
     <>
-      <Link href={pageurl} passHref>
-        <a>
-          <Card>
-            <ImageContainer>
-              <Image src={src} alt={alt}></Image>
-            </ImageContainer>
+      <Card>
+        <Link href={pageurl} passHref>
+          <a>
+            <Image
+              src={src}
+              alt={alt}
+              layout="responsive"
+              height={50}
+              width={100}
+            />
             <ProjectName>{projectname}</ProjectName>
             <IndustryName>{industry}</IndustryName>
+          </a>
+        </Link>
+        <Link href={projecturl} passHref>
+          <a rel="noopener noreferrer nofollow" target="_blank">
             <ProjectURL color={color}>{projecturl}</ProjectURL>
-          </Card>
-        </a>
-      </Link>
+          </a>
+        </Link>
+      </Card>
     </>
   );
 };

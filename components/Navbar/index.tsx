@@ -1,14 +1,8 @@
-import {
-  Logo,
-  MenuWrapper,
-  SubMenu,
-  NavAnchor,
-  Github,
-  LinkedIn,
-} from "./components";
+import { Logo, MenuWrapper, SubMenu, NavAnchor } from "./components";
 import Burger from "./Burger";
 import Link from "next/link";
 import Menu from "./Menu";
+import { Github, LinkedIn } from "../SocialLinks";
 
 const Navbar = () => {
   return (
