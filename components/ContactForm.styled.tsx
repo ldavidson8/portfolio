@@ -91,15 +91,5 @@ export const SubmitBtn = styled.button`
 `;
 
 export const SpamField = styled.p`
-  opacity: 0;
-  position: absolute;
-  height: 0;
-  width: 0;
-
-  label {
-    opacity: 0;
-  }
-  input {
-    opacity: 0;
-  }
+  display: none;
 `;

@@ -27,11 +27,17 @@ const ContactForm = () => {
       name="contact"
       id="contact"
       method="POST"
-      action="/"
       data-netlify="true"
+      netlify-honeypot="bot-field"
 
       // onSubmit={handleSubmit(onSubmit)}
     >
+      <SpamField>
+        <label>
+          Don&apos;t fill this out if you expect to hear from me!
+          <input name="bot-field" />
+        </label>
+      </SpamField>
       <input type="hidden" name="contact" value="contact" />
       <FormGroup>
         <Label htmlFor="name">Name</Label>
