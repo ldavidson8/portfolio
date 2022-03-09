@@ -130,6 +130,7 @@ const SocialLink = styled.a`
   margin: 1em 0;
   align-items: center;
   gap: 1.5em;
+  width: fit-content;
 `;
 
 const SocialLinkText = styled.p`
@@ -277,15 +278,15 @@ const Home = () => {
                   LinkedIn
                 </TextSection>
                 <SocialLinks>
-                  <SocialLink href="#">
+                  <SocialLink href="mailto:lewisdavidson8@gmail.com">
                     <Email />
                     <SocialLinkText>Email Me</SocialLinkText>
                   </SocialLink>
-                  <SocialLink href="#">
+                  <SocialLink href="https://github.com/ldavidson8">
                     <Github />
                     <SocialLinkText>Find me on Github</SocialLinkText>
                   </SocialLink>
-                  <SocialLink href="#">
+                  <SocialLink href="https://www.linkedin.com/in/lewis-davidson-9634a61ba/">
                     <LinkedIn />
                     <SocialLinkText>Find me on LinkedIn</SocialLinkText>
                   </SocialLink>

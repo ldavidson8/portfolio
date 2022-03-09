@@ -34,7 +34,7 @@ export const TextArea = styled.textarea`
 
 export const Message = styled.label`
   margin-bottom: 0.5em;
-  color: var(--color-primary, #3992ff);
+  color: var(--color-tertiary, #f44250);
   display: block;
 `;
 

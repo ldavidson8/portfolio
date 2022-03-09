@@ -16,39 +16,67 @@ type FormValues = {
 };
 
 const ContactForm = () => {
-  const { register, handleSubmit } = useForm<FormValues>();
-  const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data);
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm<FormValues>();
+  // const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data);
   return (
     <form
       name="contact"
       id="contact"
       method="POST"
-      onSubmit={handleSubmit(onSubmit)}
+      action="/"
+      data-netlify="true"
+
+      // onSubmit={handleSubmit(onSubmit)}
     >
       <FormGroup>
         <Label htmlFor="name">Name</Label>
         <Input
           id="name"
           type="text"
-          {...register("name", { required: true })}
+          {...register("name", {
+            required: {
+              value: true,
+              message: "Please enter your name",
+            },
+          })}
         />
-        {/* <Message>This is the validation message</Message> */}
+        <Message>{errors?.name?.message}</Message>
       </FormGroup>
       <FormGroup>
         <Label htmlFor="email">Email</Label>
         <Input
           id="email"
           type="email"
-          {...(register("email"), { required: true })}
+          {...register("email", {
+            required: true,
+            pattern: /.+@.+/,
+          })}
         />
+        <Message>
+          {errors?.email?.type === "required" && "Email is required"}
+        </Message>
+        <Message>
+          {errors?.email?.type === "pattern" &&
+            "Email should be in xxx@yyy.zzz format"}
+        </Message>
       </FormGroup>
       <FormGroup>
         <Label htmlFor="message">Message</Label>
         <TextArea
           id="message"
           rows={5}
-          {...(register("message"), { required: true })}
+          {...register("message", {
+            required: {
+              value: true,
+              message: "Please enter your message",
+            },
+          })}
         />
+        <Message>{errors?.message?.message}</Message>
       </FormGroup>
 
       {/* <input type="submit" /> */}
