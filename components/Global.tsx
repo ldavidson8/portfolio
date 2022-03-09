@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
@@ -122,3 +122,5 @@ a {
 }
 
 `;
+
+export default GlobalStyle;
