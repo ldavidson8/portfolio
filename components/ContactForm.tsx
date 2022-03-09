@@ -32,6 +32,7 @@ const ContactForm = () => {
 
       // onSubmit={handleSubmit(onSubmit)}
     >
+      <input type="hidden" name="contact" value="contact" />
       <FormGroup>
         <Label htmlFor="name">Name</Label>
         <Input
