@@ -93,3 +93,9 @@ export const SubmitBtn = styled.button`
 export const SpamField = styled.p`
   display: none;
 `;
+
+export const FormSuccess = styled.p`
+  color: var(--color-secondary, #d83bd2);
+  font-size: 1.5rem;
+  margin: 1em 0;
+`;
