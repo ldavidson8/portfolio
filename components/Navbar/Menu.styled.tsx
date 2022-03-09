@@ -16,7 +16,7 @@ export const StyledMenu = styled.nav<Props>`
   width: 100%;
   z-index: 1000;
   padding-top: 3.5rem;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   align-items: center;
   a {
     padding: 1em;

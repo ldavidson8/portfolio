@@ -25,10 +25,9 @@ const ContactForm = () => {
   return (
     <form
       name="contact"
-      id="contact"
       method="POST"
       data-netlify="true"
-      netlify-honeypot="bot-field"
+      data-netlify-honeypot="bot-field"
 
       // onSubmit={handleSubmit(onSubmit)}
     >
@@ -87,7 +86,7 @@ const ContactForm = () => {
       </FormGroup>
 
       {/* <input type="submit" /> */}
-      <SubmitBtn type="submit" form="contact">
+      <SubmitBtn type="submit">
         <div className="svg-wrapper-1">
           <div className="svg-wrapper">
             <svg
