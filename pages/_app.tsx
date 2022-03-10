@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/josefin-sans-v23-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/josefin-sans-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -22,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/lato-v22-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/lato-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -44,7 +46,7 @@ html {
 body {
   background-color: var(--color-background, #121212);
   color: var(--color-text, #fff);
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;;
   line-height: 1.6;
 }
 

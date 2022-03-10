@@ -65,8 +65,7 @@ export const SubMenu = styled.div`
 
 export const NavAnchor = styled.a`
   color: white;
-  font-size: clamp(1em, 1em+2vw, 3em);
-  text-decoration: none;
+  font-size: clamp(1em, 3vw, 1.5em);
   transition: color 0.3s;
   &:hover {
     color: var(--color-primary, #3992ff);

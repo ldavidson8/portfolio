@@ -67,6 +67,8 @@ const ProjectCard = ({
               layout="responsive"
               height={50}
               width={100}
+              placeholder="blur"
+              blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNUrwcAANMAqC9d4aUAAAAASUVORK5CYII="
             />
             <ProjectName>{projectname}</ProjectName>
             <IndustryName>{industry}</IndustryName>

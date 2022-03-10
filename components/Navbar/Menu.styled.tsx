@@ -19,11 +19,9 @@ export const StyledMenu = styled.nav<Props>`
   transition: transform 0.3s ease-in-out;
   align-items: center;
   a {
+    font-size: clamp(2rem, 4vw, 3rem);
     padding: 1em;
-    font-size: 2rem;
     color: white;
-    font-size: clamp(1em, 1em+2vw, 3em);
-    text-decoration: none;
     transition: color 0.3s;
     &:hover {
       color: var(--color-primary, #3992ff);

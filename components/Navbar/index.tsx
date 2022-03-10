@@ -6,7 +6,7 @@ import { Github, LinkedIn } from "../SocialLinks";
 
 const Navbar = () => {
   return (
-    <>
+    <header>
       <MenuWrapper>
         <Logo />
         <SubMenu></SubMenu>
@@ -32,7 +32,7 @@ const Navbar = () => {
           </Link>
         </SubMenu>
       </MenuWrapper>
-    </>
+    </header>
   );
 };
 export default Navbar;

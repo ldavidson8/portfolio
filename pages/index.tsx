@@ -17,15 +17,15 @@ const Hero = styled.div`
 `;
 
 const MainHeading = styled.h1`
-  font-size: clamp(3em, 4vw, 4em);
-  font-family: "Josefin Sans";
+  font-size: clamp(2.5em, 6vw, 4em);
+  font-family: "Josefin Sans", sans-serif;
   color: #fff;
   margin-bottom: 1em;
 `;
 
 const SubHeading = styled.h2`
-  font-size: clamp(2em, 3vw, 3em);
-  font-family: "Josefin Sans";
+  font-size: clamp(1.5em, 4vw, 3em);
+  font-family: "Josefin Sans", sans-serif;
   margin-bottom: 1em;
   color: #fff;
   font-weight: 400;
@@ -96,7 +96,9 @@ const TextContainer = styled.div`
   line-height: 2;
 `;
 
-const TextSection = styled.p``;
+const TextSection = styled.p`
+  margin: 1em 0;
+`;
 
 const FlexContainer = styled.div`
   display: flex;
@@ -196,11 +198,13 @@ const Home = () => {
                   the UK. I began my journey in development and design for
                   around 4 years after completing college and I&apos;ve took a
                   massive undertaking in improving my skills in all areas with
-                  new features that appear on the web in recent years. <br />I
-                  specialise in Javascript based frameworks such as React and
-                  Vue, alongside my proficient knowledge of years studying the
-                  core principles of HTML and CSS to make the web look its best
-                  and fastest.
+                  new features that appear on the web in recent years.{" "}
+                  <TextSection>
+                    I specialise in Javascript based frameworks such as React
+                    and Vue, alongside my proficient knowledge of years studying
+                    the core principles of HTML and CSS to make the web look its
+                    best and fastest.
+                  </TextSection>
                 </TextSection>
               </TextContainer>
             </FlexContainer>
@@ -212,7 +216,7 @@ const Home = () => {
         <ProjectGrid>
           <ProjectCard
             pageurl="#"
-            src="/images/sme.png"
+            src="/images/sme.jpg"
             alt=""
             projectname="SwapMyEnergy"
             industry="Energy Intermediary"
@@ -221,7 +225,7 @@ const Home = () => {
           />
           <ProjectCard
             pageurl="#"
-            src="/images/gigawaffle.png"
+            src="/images/gigawaffle.jpg"
             alt=""
             projectname="Gigawaffle"
             industry="Marketing &amp; Web Design"
@@ -235,11 +239,11 @@ const Home = () => {
             projectname="PlaygroundBullys"
             industry="Dog Breeder and Transportation"
             color="var(--color-tertiary, #F44250)"
-            projecturl="https://swapmyenergy.co.uk/"
+            projecturl="https://playgroundbullysuk.com/"
           />
           <ProjectCard
             pageurl="#"
-            src="/images/grand-venue.png"
+            src="/images/grand-venue.jpg"
             alt=""
             projectname="Grand Venue"
             industry="Wedding Venue"
@@ -248,7 +252,7 @@ const Home = () => {
           />
           <ProjectCard
             pageurl="#"
-            src="/images/grand-occasions.png"
+            src="/images/grand-occasions.jpg"
             alt=""
             projectname="Grand Occasions"
             industry="Dog Breeder and Transportation"
