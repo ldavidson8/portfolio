@@ -1,7 +1,5 @@
 import { Logo, MenuWrapper, SubMenu, NavAnchor } from "./components";
-import Burger from "./Burger";
 import Link from "next/link";
-import Menu from "./Menu";
 import { Github, LinkedIn } from "../SocialLinks";
 
 const Navbar = () => {
@@ -11,13 +9,13 @@ const Navbar = () => {
         <Logo />
         <SubMenu></SubMenu>
         <SubMenu>
-          <Link href="/about" passHref>
+          <Link href="#about" passHref>
             <NavAnchor>About</NavAnchor>
           </Link>
-          <Link href="/portfolio" passHref>
-            <NavAnchor>Portfolio</NavAnchor>
+          <Link href="#projects" passHref>
+            <NavAnchor>Projects</NavAnchor>
           </Link>
-          <Link href="/contact" passHref>
+          <Link href="#contact" passHref>
             <NavAnchor>Contact</NavAnchor>
           </Link>
           <Link href="https://github.com/ldavidson8">

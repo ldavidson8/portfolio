@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
+  background-color: #202020;
   padding-top: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
   padding-bottom: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
 `;
