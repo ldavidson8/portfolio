@@ -42,7 +42,7 @@ const Projects = () => {
             id: `projects-${index + 1}`,
             trigger: el,
             start: "top center+=200",
-            markers: true,
+            // markers: true,
           },
         }
       );
