@@ -20,7 +20,7 @@ export const projects = [
   {
     title: "Grand Venue",
     description:
-      "They wanted a redesign of their original website, I redesigned and consulted changes with them and edited their site that was built in Elementor",
+      "Wedding Venue website that the client wanted a redesign while keeping their original theme. I consulted with them after creating a new version with Figma, which after approval I redesigned the existing website.",
     image: "/images/grand-venue.jpg",
     tags: ["Wordpress", "Elementor", "Figma"],
     visit: "https://grandvenue.co/home/",

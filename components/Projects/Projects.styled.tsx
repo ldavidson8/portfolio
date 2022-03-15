@@ -63,14 +63,15 @@ export const Tag = styled.li`
 
 export const ExternalLinks = styled.a`
   color: #fff;
-  font-size: 1.5rem;
   background-color: var(--color-primary, #3992ff);
-  padding: 0.3em 0.8em;
+  padding: 0.5em 2em;
   border: 2px solid transparent;
   border-radius: 15px;
   transition: 0.3s;
   cursor: pointer;
-  &:hover {
+  :hover {
     border-color: #fff;
+    color: var(--color-primary, #3992ff);
+    background-color: white;
   }
 `;
