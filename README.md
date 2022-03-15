@@ -1,6 +1,6 @@
 # Welcome to my Portfolio
 
-This is a project built upon Next JS, Styled Components, Typescript, React Hook Form and deployed to Netlify. 
+This is my portfolio built upon NextJS, Styled Components, Typescript, React Hook Form and deployed to Netlify. 
 ## Demo
 
 https://agitated-murdock-751a61.netlify.app/
