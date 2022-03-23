@@ -32,7 +32,7 @@ export const projects = [
       "Grand Venue also wanted a separate website for a different venue location so we cloned the design and replaced content to fit the venue's location and look",
     image: "/images/grand-occasions.jpg",
     tags: ["Wordpress", "Elementor", "Figma"],
-    visit: "https://react-tourist-places.netlify.app/",
+    visit: "https://grandoccasions.co/home/",
     id: 3,
   },
   {
@@ -50,7 +50,7 @@ export const projects = [
       "One of our partners wanted a new website to allow customers to get energy switching online. Currently, it operates on a call-only service due to the energy crisis.",
     image: "/images/sme.jpg",
     tags: ["NextJS", "TailwindCSS", "Figma"],
-    visit: "https://view-lyrics.netlify.app",
+    visit: "https://swapmyenergy.co.uk",
     id: 5,
   },
 ];
