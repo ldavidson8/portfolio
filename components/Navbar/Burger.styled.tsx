@@ -10,7 +10,7 @@ export const StyledBurger = styled.button<Props>`
   flex-direction: column;
   width: 40px;
   position: absolute;
-  top: 3.5%;
+  top: 30px;
   right: 5%;
   z-index: 1001;
 

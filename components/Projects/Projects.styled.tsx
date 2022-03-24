@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const ProjectGrid = styled.div`
   display: grid;
-  place-items: center;
+  justify-content: center;
   gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 1fr;
 
   @media screen and (min-width: 850px) {
     grid-template-columns: repeat(2, 1fr);
@@ -30,7 +31,7 @@ export const CardContainer = styled.div`
 
 export const ImageContainer = styled.div`
   position: relative;
-  height: 320px;
+  height: 300px;
   width: 100%;
 `;
 
@@ -54,8 +55,9 @@ export const ProjectInfo = styled.p`
 
 export const TagList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   margin: 2rem 0;
-  justify-content: space-around;
+  gap: 1em;
 `;
 export const Tag = styled.li`
   color: var(--color-primary, #3992ff);
@@ -70,8 +72,6 @@ export const ExternalLinks = styled.a`
   transition: 0.3s;
   cursor: pointer;
   :hover {
-    border-color: #fff;
-    color: var(--color-primary, #3992ff);
-    background-color: white;
+    background-color: var(--color-primaryhover, #4179cc);
   }
 `;

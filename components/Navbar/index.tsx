@@ -1,4 +1,4 @@
-import { Logo, MenuWrapper, SubMenu, NavAnchor } from "./components";
+import { Logo, MenuWrapper, SubMenu } from "./components";
 import Link from "next/link";
 import { Github, LinkedIn } from "../SocialLinks";
 
@@ -10,13 +10,13 @@ const Navbar = () => {
         <SubMenu></SubMenu>
         <SubMenu>
           <Link href="#about" passHref>
-            <NavAnchor>About</NavAnchor>
+            <a>About</a>
           </Link>
           <Link href="#projects" passHref>
-            <NavAnchor>Projects</NavAnchor>
+            <a>Projects</a>
           </Link>
           <Link href="#contact" passHref>
-            <NavAnchor>Contact</NavAnchor>
+            <a>Contact</a>
           </Link>
           <Link href="https://github.com/ldavidson8">
             <a>

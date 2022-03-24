@@ -31,10 +31,10 @@ const GlobalStyles = createGlobalStyle`
 }
 
 html {
-  --color-primary: #3992FF;
-  --color-primaryhover: #3998ff;
-  --color-secondary: #D83BD2;
-  --color-tertiary: #F44250;
+  --color-primary: #7DB1FF;
+  --color-primaryhover: #4179cc;
+  --color-secondary: #FF7DB8;
+  --color-tertiary: #2BEECB;
   --color-background: #121212;
   --color-icons: #F8F8F8;
   --color-text: #fff;
@@ -45,6 +45,8 @@ body {
   color: var(--color-text, #fff);
   font-family: 'Lato', sans-serif;;
   line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* Firefox */
@@ -52,6 +54,7 @@ html {
   scrollbar-color: var(--color-primary,#3992FF);
   scrollbar-width: thin;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* WebKit and Chromiums */

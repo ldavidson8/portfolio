@@ -22,9 +22,9 @@ const Contact = () => {
           <FlexContainer>
             <TextContainer>
               <TextSection>
-                If you think I&apos;m a good fit for a project you have, or just
-                want to have a chat, fill in the form or message me on my
-                LinkedIn
+                I&apos;m currently open to new opportunities, <br />
+                if you have any questions or just want to have a chat, fill in
+                the form or message me on my LinkedIn
               </TextSection>
               <SocialLinks>
                 <SocialLink href="mailto:lewisdavidson8@gmail.com">

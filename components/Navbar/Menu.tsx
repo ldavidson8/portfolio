@@ -1,6 +1,6 @@
 import { StyledMenu } from "./Menu.styled";
 import Link from "next/link";
-import { Github, LinkedIn } from "../SocialLinks";
+import { Github, LinkedIn } from "@/components/SocialLinks";
 
 interface Props {
   open: boolean;

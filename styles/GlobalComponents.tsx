@@ -113,6 +113,14 @@ export const SocialLink = styled.a`
   align-items: center;
   gap: 1.5em;
   width: fit-content;
+
+  :hover {
+    svg,
+    p {
+      color: var(--color-primary, #7db1ff);
+      transition: color 0.3s;
+    }
+  }
 `;
 
 export const SocialLinkText = styled.p`
